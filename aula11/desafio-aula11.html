@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desafio Condições JavaScript</title>
+</head>
+<body>
+  <h1>Brasileiro ou Estrangeiro?</h1>
+  Pais de Origem: <input type="text" name="txtpais" id="txtpais">
+  <input type="button" value="VERIFICAR" onclick="confirmar()">
+  <div id="resultado"></div>
+
+  <script>
+    function confirmar() {
+      var txtp = document.getElementById('txtpais')
+      var resutado = document.querySelector('div#resultado')
+      var pais = txtp.value
+      if (pais != 'Brasil') {
+        resultado.innerHTML = "<p>Você é Estrangeiro(a).</p>"
+      } else {
+        resultado.innerHTML = "<p>Você é Brasileiro(a).</p>"
+      }
+    }
+  </script>
+
+</body>
+</html>
