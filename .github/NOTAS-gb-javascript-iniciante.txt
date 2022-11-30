@@ -1,0 +1,323 @@
+CURSO EM VIDEO - JAVA SCRIPT - 18/11/2022
+
+MODULO A - Conhecendo o JavaScript
+AULA 01 - O que o JavaScript é capaz de fazer?
+
+Módulo B - Comandos Básicos do JavaScript
+AULA 05 - Tipos de Dados e Variáveis 
+- Data Types = number (Infinity, NaN); 
+- Data Types = null; undefined; object.
+
+PRIMITIVOS: Number, String e Bolean
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+AULA 06 - Tratamento de Dados
+
+- Alteração de NUMERO -> STRING
+> String(n);
+> n.toSring(n)
+
+- Formatando String
+var s = 'JavaScript'
+	'Eu estou aprendendo s'    // não faz interpolação
+	'Eu esetou aprendend' + s  // usa concatenação
+	`Eu estou estudando ${s}`  // usa template string
+
+> s.length		// quantos caracteres a string tem
+> s.toUpperCase()	// tudo para "MAIUSCULAS"
+> s.toLowerCase()	// tudo para "minúsculas"
+
+- Formatando Números
+var n1 = 1543.5
+n1
+n1.toFixed(2)	
+// resulta em 1543.50 - duas casas decimais//
+n1toLocateString('pt-BR', {style: 'currency', currency: 'BRL'})
+// resulta em R$ 1.543,50 - mostra em valor monetário - pode trocar para outra localidade: USD, EUR, etc.
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+AULA 07 - Operadores do Java Script - PARTE 01
+
+--OPERADORES ARITMÉTICOS--
+> aritméticos: + - * / % ** (operador binário - necessita dois operandos)
+obs: % divisão de números reais, resulta o resto da divisão
+obs2: ** = potencia
+> atribuição:
+> relacionais:
+> lógicos:
+> ternário:
+
+--ORDEM DE PRECEDÊNCIA--
+()
+**
+* / %
++ -
+
+-- AUTO ATRIBUIÇÃO -- 
+var n = 3
+n = n + 4 (ou n+=4)
+n = 7
+
+-- INCREMENTO --
+var x = 5
+x = x + 1	ou 	x ++
+x = x -1	ou	x --
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+AULA 08 - Operadores do Java Script - PARTE 02
+
+-- OPERADORES RELACIONAIS --
+*retornam true/false
+
+> - maior que
+< - menor que
+>= - maior ou igual
+<= - menor ou igual
+== - igual 
+!4 - não igual a 4
+
+OBS: 5 === "5" FALSE(5 igual a 5, identidade restrita. Mesmos valor, mas TIPOS diferente: number e string)
+    5 === 5 TRUE 
+
+--- OPERADORES LÓGICOS --
+
+!	negação     (não)
+&&	conjunção   (e)
+||	disjunção   (ou)
+
+>>>>> ORDEM PRECEDÊNCIA OPERADORES <<<<<<
+Primeiro: Operadores ARITMÉDICOS
+Segundo:  Operadores RELACIONAIS
+Terceiro: Operadores LÓGICOS
+
+--- OPERADOR TERNÁRIO --
+
+?
+:
+>>> teste    ?    true 	      :     false
+>>> média >= ?   "Aprovado"	 "Reprovado"
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+AULA 09 - Introdução ao DOM
+
+° O que é DOM?
+>>> Document Object Model
+
+**Árvore DOM**
+~~~ SELECIONAR OBJETIVO: por Marca; por ID; por Nome; por Classe; por Seletor.
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+AULA 10 - Eventos DOM
+
+> eventos de mouse = mouseenter; mousemove; mousedown (segura clique na <div>;
+		     mouseup (quando solta o clique do mouse); click; mouseout.
+
+**FUNÇÕES**: Conjunto de códigos/linhas.
+function ação(parametros){
+
+}
+*bloco: conteúdo dentro de chaves.
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+MODULO D - CONDIÇÕES EM JAVASCRIPT
+> Condições Simples - estrutura IF;
+> Condições Compostas - estrtura IF,else;
+> Condições Aninhadas;
+> Condições Múltiplas.
+
+>>>>>>>>>>> AULA 11 - Condições Parte 01 <<<<<<<<<<<<<
+
+♦ Sequências --> var n = 3 -> n +=2 -> window.alert(n)
+*não pode mudar a ordem de execução.
+
+♦ Condições --> estrutura com bifurcação. Não segue linha vertifical, há desvio. 		Chamado desvio condicional.
+
+• if (condição) {
+	true
+} else { 
+	false
+}
+
+// Tipos de Condição
+• condição simples: apenas, true. Se a resultar em 					    falso, o fluxo do programa continua.
+• condição composta: caso seja true, tem algo pra fazer, caso seja falso 		     há outro caminho para seguir.
+
+
+>>>>>>>>>>>> AULA 12 - Condições Parte 02 <<<<<<<<<<
+
+♦ Condições Aninhadas: Uma condição composta com outras condições dentro.
+
+♦ Condição Múltipla: uma expressão com vários valores fixos. Útil em 		     situações pontuais/específicas.
+
+-> switch (expressão) {
+	case valor 1:
+	case valor 2:
+	case valor 3:
+	defaut:
+}
+*no intervalo entre os blocos é preciso colocar comando "break";
+** estrutra para testar dados pontuais. Funciona com números inteiros e caracteres.
+ 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+MODULO E - REPETIÇÕES EM JAVASCRIPT
+> Repetições com teste no início;
+> Repetições com teste final;
+> Repetições com controle;
+> Exercícios Propostos
+
+>>>>>>>>>>> AULA 13 - Repetições em JS (Parte 01) <<<<<<<<<<
+
+Na programação o objetivo é escrever programas para sair de um ponto A e chegar em um ponto B.
+Para percorrer esse caminha entre os pontos A e B são usadas ESTRUTURAS DE CONTROLE:
+
+♦ SEQUÊNCIA: Executa tarefas sequencialmente partindo de um ponto (A) até 	      chegar ao objetivo (ponto B).
+Exemplo: comer uma pizza de oito pedaços inteira. Executar o passo de "comer uma fatia" sequencialmente até as fatias acabarem.
+
+♦ CONDIÇÕES: Executa tarefas com possibilidade de desvios. A tarefa passa 	     por TESTE LÓGICO que tem duas possiblidades: TRUE ou FALSE.
+Exemplo: Comer 8 pedaços de pizza, exceto sabor portuguesa. Então, {se o pedaço de pizza não for sabor poruguesa, eu como, senão eu não como.}
+
+♦ REPETIÇÕES / LAÇOS: Faz a repetição de um bloco ENQUANTO o resultado for 		      VERDADEIRO, quando o resultado for FALSO a repitação                       não acontece mais e o programa finaliza ou segue pro 	              bloco seguinte.
+>>> while (condição) {
+	BLOCO
+}
+>>> Estrutura de repetição com TESTE LÓGICO no INICIO
+
+►►► do {
+   BLOCO
+} while (condição)
+
+►►► Estrutura de repetição com TESTE LÓGICO depois da execução do bloco (no final).
+
+>>>>>>>>>>> AULA 14 - Repetições em JS (Parte 02) <<<<<<<<<<
+
+♦ Estrutura de repetição com variável de controle.
+- inicialização; teste lógico e incremento.
+
+►►► for (inicio;teste;incr){
+	BLOCO
+}
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+EXERCICIO - PARTE 4
+
+○► Validações: caixa vazia = impossível contar (mensagem no resultado)
+	       caixa passo 0 = alert "Passo inválido!" Consierando PASSO 01 (a caixa passo passa a ter o valor de 1)
+
+EXERCICIO - PARTE 6
+
+○► TABUADA: Numero: input - gerar tabuada (onclick)
+
+select: digite um numero acima.
+
+if value imput number == 0 gerar alerta "[ERRO] Por favor, digite um número"
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+	        
+MÓDULO F
+> Variáveis Compostas;
+> Uso de funções e eventos;
+> Passagem de Parâmetros;
+> Exericícos Propostos;
+> Próximos Passos.
+
+>>>>>>>>>> AULA 15 - VARIAVEIS COMPOSTAS <<<<<<<<<<<<
+
+♦ Variáveis simples: armazenam um valor por vez
+
+♦ Variáveis compostas: conseguem armazenar vários valores em uma mesma estrutura.
+
+►►► let/var a = [a0,a1,a2]
+
+• ARRAY / VETOR: a (uma variável composta).
+• ELEMENTO: partes do vetor(espaços).
+• INDICE/CHAVE/KEY: numero do elemento.
+
+►►► Um ARRAY / VETOR é uma variável com vários ELEMENTOS. Cada ELEMENTO eé composto por seu VALOR e por uma INDICE/CHAVE de identificação.
+
+► num.push() = adiciona valor entre () na última posição;
+► num.length = para informar a quantidade de elementos;
+► num.sort() = coloca todos os elementos em ordem crescente;
+► num[] = informa o valor da posição indicada entre [];
+► num.indexOf() = retorna a chave onde o valor entre () se encontra 				{retorna -1 quando o valor não existe}.
+
+************** EXEMPLO ************** 
+
+for(let pos=0; pos<num.length; pos++) {
+    console.log(num[pos])
+}
+
+►►► ►►► Simplificando ►►► ►►► 
+
+for("indice" in "nome da variável composta) {
+    console.log(	
+} 
+
+for(:let pos: in :num:) {
+    console.log(num[pos])   
+{
+
+"PARA CADA POSIÇÃO DENTRO DA VARIÁVEL COMPOSPOTA EU VOU MOSTRAR O :num[pos]:"
+
+!! ATENÇÃO !! 
+› essa sintaxe do for só funciona arreys e objetos. 
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+>>>>>>>>>> AULA 16 - FUNÇÕES <<<<<<<<<<<<
+
+→ FUNÇÃO: chamada; parâmetro; ação; retorno. (fatores)
+
+► São ações executadas assim que são CHAMADAS ou em decorrência de algum EVENTO.
+
+► Uma função pode receber PARAMETROS e retornar um RESULTADO.
+
+function 'ação'(parametros){
+	'return'  resultado
+} 
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+EXERCICIO - PARTE 7 - ANALISADOR DE NÚMEROS
+
+ALERT 01 - Valor inválido ou já adicionado na lista. 
+// quando o valor for repetido ou não estiver entre 1 e 100 ou quando for vazio. 
+
+ALERT 02 - Adicione valores antes de finalizar
+// quando o botão finalizar for ativado sem adicionar números.
+
+se o valor estiver ok = "Valor x adicionado." dentro do SELECT.
+
+Numero (entre 1 e 100) = input number onclick ADICIONAR
+
+SELECT
+
+INPUT BUTTON = FINALIZAR
+
+CRIAR FUNÇÕES PARA:
+► Somar a quantidade de números cadastrados;
+► Informar o maior valor cadastrado;
+► Informar o menor valor cadastrado;
+► Somar os valores dos números cadastrados;
+► Mostrar a média dos valores digitados.
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
