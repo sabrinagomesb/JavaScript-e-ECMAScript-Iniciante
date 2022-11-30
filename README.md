@@ -12,7 +12,7 @@ Dividido em MÓDULOS de A até F com 17 aulas ao todo + 8 aulas somente para exe
 - [x] Repetições;
 - [x] Variáveis Compostas.
  
- 📌 Curso disponível no [youtube.]([http](https://www.youtube.com/playlist?list=PLHz_AreHm4dlsK3Nr9GVvXCbpQyHQl1o1))
+ 📌 Curso disponível no [youtube](https://www.youtube.com/playlist?list=PLHz_AreHm4dlsK3Nr9GVvXCbpQyHQl1o1).
 
  📝 [Notas criadas durante o curso.](.github/NOTAS-gb-javascript-iniciante.txt)
 
